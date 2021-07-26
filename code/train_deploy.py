@@ -111,6 +111,7 @@ def _get_test_data_loader(test_batch_size, training_dir):
 
 
 def train(args):
+    print('Starting training', flush = True)
     is_distributed = len(args.hosts) > 1 and args.backend is not None
     logger.debug("Distributed training - %s", is_distributed)
     use_cuda = args.num_gpus > 0
