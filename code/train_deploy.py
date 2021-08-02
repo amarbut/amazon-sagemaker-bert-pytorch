@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 logger.addHandler(logging.StreamHandler(sys.stdout))
 
-MAX_LEN = 530  # this is the max length of the sentence
+MAX_LEN = 150  # this is the max length of the sentence
 
 print("Loading BERT tokenizer...")
 tokenizer = BertTokenizer.from_pretrained("bert-base-uncased", do_lower_case=True)
