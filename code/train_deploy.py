@@ -13,7 +13,7 @@ import torch.utils.data.distributed
 from torch.utils.data import DataLoader, RandomSampler, TensorDataset
 from transformers import AdamW, BertForSequenceClassification, BertTokenizer
 
-os.environ['PYTHONUNBUFFERED'] = 'True'
+#os.environ['PYTHONUNBUFFERED'] = 'True'
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
